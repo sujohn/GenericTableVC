@@ -1,4 +1,4 @@
-# GenericTableVC
+# iOS - GenericTableVC
 To make iOS Tableview Generic - make dev life easy.
 Generic Table View Controller, Which can accept UITableViewCell subclass as well as Custom UITableViewCell with Xib.
 
