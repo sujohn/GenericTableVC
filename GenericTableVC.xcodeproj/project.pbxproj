@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2477A921EDB664009165FA /* TestTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2477A721EDB664009165FA /* TestTableCell.swift */; };
+		3F2477AA21EDB664009165FA /* TestTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F2477A821EDB664009165FA /* TestTableCell.xib */; };
 		3F998C3921BA233900346470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F998C3821BA233900346470 /* AppDelegate.swift */; };
 		3F998C3B21BA233900346470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F998C3A21BA233900346470 /* ViewController.swift */; };
 		3F998C3E21BA233900346470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F998C3C21BA233900346470 /* Main.storyboard */; };
 		3F998C4021BA233C00346470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F998C3F21BA233C00346470 /* Assets.xcassets */; };
 		3F998C4321BA233C00346470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F998C4121BA233C00346470 /* LaunchScreen.storyboard */; };
+		3F998C4B21BA27ED00346470 /* GenericTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F998C4A21BA27ED00346470 /* GenericTableVC.swift */; };
+		3F998C4D21BA2D5C00346470 /* GenericTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F998C4C21BA2D5C00346470 /* GenericTableModel.swift */; };
+		3F998C4F21BA311400346470 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F998C4E21BA311400346470 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F2477A721EDB664009165FA /* TestTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableCell.swift; sourceTree = "<group>"; };
+		3F2477A821EDB664009165FA /* TestTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTableCell.xib; sourceTree = "<group>"; };
 		3F998C3521BA233900346470 /* GenericTableVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericTableVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F998C3821BA233900346470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F998C3A21BA233900346470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		3F998C3F21BA233C00346470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F998C4221BA233C00346470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F998C4421BA233C00346470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F998C4A21BA27ED00346470 /* GenericTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableVC.swift; sourceTree = "<group>"; };
+		3F998C4C21BA2D5C00346470 /* GenericTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableModel.swift; sourceTree = "<group>"; };
+		3F998C4E21BA311400346470 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +65,12 @@
 			isa = PBXGroup;
 			children = (
 				3F998C3821BA233900346470 /* AppDelegate.swift */,
+				3F998C4A21BA27ED00346470 /* GenericTableVC.swift */,
+				3F998C4C21BA2D5C00346470 /* GenericTableModel.swift */,
+				3F998C4E21BA311400346470 /* Models.swift */,
 				3F998C3A21BA233900346470 /* ViewController.swift */,
+				3F2477A721EDB664009165FA /* TestTableCell.swift */,
+				3F2477A821EDB664009165FA /* TestTableCell.xib */,
 				3F998C3C21BA233900346470 /* Main.storyboard */,
 				3F998C3F21BA233C00346470 /* Assets.xcassets */,
 				3F998C4121BA233C00346470 /* LaunchScreen.storyboard */,
@@ -124,6 +139,7 @@
 			files = (
 				3F998C4321BA233C00346470 /* LaunchScreen.storyboard in Resources */,
 				3F998C4021BA233C00346470 /* Assets.xcassets in Resources */,
+				3F2477AA21EDB664009165FA /* TestTableCell.xib in Resources */,
 				3F998C3E21BA233900346470 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F998C4D21BA2D5C00346470 /* GenericTableModel.swift in Sources */,
+				3F998C4B21BA27ED00346470 /* GenericTableVC.swift in Sources */,
 				3F998C3B21BA233900346470 /* ViewController.swift in Sources */,
 				3F998C3921BA233900346470 /* AppDelegate.swift in Sources */,
+				3F2477A921EDB664009165FA /* TestTableCell.swift in Sources */,
+				3F998C4F21BA311400346470 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +302,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GenericTableVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +311,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Md.-Shaiful-Islam-Sujohn.GenericTableVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,7 +321,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GenericTableVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Md.-Shaiful-Islam-Sujohn.GenericTableVC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

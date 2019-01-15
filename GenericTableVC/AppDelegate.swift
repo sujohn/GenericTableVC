@@ -16,6 +16,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        let gen1 = GenericTableModel(items: Trade.trades, cellHeight: 44.0, xib: true)
+        gen1.numberOfSections = 1
+        let gen2 = GenericTableModel(items: Trade.trades, cellHeight: 44.0, xib: false)
+        gen2.numberOfSections = 1
+        
+        let gtvc = GenericTableVC(genericModel: gen1, configure: { (cell: TestTableCell, model) in
+            
+            cell.textField.text = model.currency
+            
+        }) { (trade) in
+            print(trade.buyOrSell)
+        }
+        gtvc.title = "Title1"
+        
+        let gtvc2 = GenericTableVC(genericModel: gen2, configure: { (cell: UITableViewCell, model) in
+            
+            cell.textLabel!.text = model.message
+            
+        }) { (trade) in
+            print(trade.buyOrSell)
+        }
+        gtvc2.title = "Title2"
+        
+        let tabVC = UITabBarController(nibName: nil, bundle: nil)
+        tabVC.setViewControllers([
+            UINavigationController(rootViewController: gtvc),
+            UINavigationController(rootViewController: gtvc2)
+            ], animated: false)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = tabVC
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
